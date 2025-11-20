@@ -1,47 +1,62 @@
-Portfólio de Pedro Henrique Valença Ramos
-Olá! 👋 Seja bem-vindo ao repositório do meu portfólio pessoal. Aqui você encontrará informações sobre mim, minhas habilidades e os projetos que venho desenvolvendo na minha jornada como desenvolvedor de software.
+# 👨‍💻 Portfólio Profissional - Pedro Henrique Valença Ramos
 
-Visite meu portfólio ao vivo: https://pedrohvalencar.github.io/
+> Desenvolvedor Full Stack & Game Dev | Unindo visão analítica de negócios com engenharia de software.
 
-Sobre Mim
-Sou um profissional multifacetado em transição de carreira para a área de desenvolvimento, com formação em Administração e experiência prévia nas áreas administrativa e de qualidade. Atualmente, estou cursando 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Engenharia de Software  para aprofundar meus conhecimentos técnicos.
+## 📄 Sobre
 
-Minha trajetória profissional me proporcionou habilidades analíticas e um foco em resolução de problemas, que hoje aplico na criação de código limpo e eficiente. Sou proativo, organizado e tenho grande facilidade para trabalhar em equipe. Como instrutor de inglês fluente e coautor de seis livros didáticos , desenvolvi uma excelente capacidade de comunicação para simplificar e ensinar conceitos complexos.
+Este é o meu portfólio pessoal, desenvolvido para apresentar minha jornada de transição de carreira da Administração para o Desenvolvimento de Software. O projeto foi construído com foco em **Design Responsivo**, **HTML Semântico** e **Experiência do Usuário (UX)**.
 
+Aqui concentro meus projetos práticos, minhas competências técnicas (Hard Skills) e minha visão profissional.
 
+### 🧠 Minha Filosofia ("O Motorista de Software")
+Vejo-me como um "motorista de software" que não apenas sabe dirigir diversos veículos (linguagens como Java, Python, PHP), mas que conhece detalhadamente as rotas (algoritmos) e o mapa (arquitetura e modelagem). Essa visão me permite construir sistemas eficientes, previsíveis e seguros.
 
+## 🚀 Projetos em Destaque
 
+O portfólio atua como um hub para meus principais trabalhos:
 
-Busco ativamente minha primeira oportunidade como Desenvolvedor Júnior, onde possa utilizar minhas competências para contribuir com o crescimento da organização e otimizar processos através da tecnologia.
+1.  **Receitas+ (Full Stack):** Sistema web dinâmico com PHP, PDO e MySQL. Foca em segurança, modelagem relacional e conformidade com LGPD.
+2.  **The Snake (Game Dev):** Recriação do clássico jogo da cobrinha utilizando Python e Pygame, com lógica de colisão e dificuldade progressiva.
+3.  **GamesForAll Reviewer:** Plataforma de reviews de jogos inclusiva, desenvolvida com JavaScript e Ruby.
 
-🛠️ Tecnologias e Ferramentas
-Estas são algumas das tecnologias com as quais tenho trabalhado:
+## 🛠️ Tecnologias Utilizadas no Portfólio
 
+* **HTML5:** Estruturação semântica para SEO e acessibilidade.
+* **CSS3:**
+    * *Flexbox & Grid Layout:* Para alinhamento dos cards e responsividade.
+    * *CSS Variables:* Para fácil manutenção da paleta de cores (Dark Mode).
+    * *Animations:* Efeitos de `fade-in` e `hover` para interatividade.
+* **JavaScript:** Uso de `IntersectionObserver` para animar elementos conforme o scroll da página.
+* **FontAwesome:** Ícones vetoriais para a seção de contato.
 
-Linguagens de Programação: Python, JavaScript, Java, HTML, CSS, PHP.
+## 📂 Estrutura do Projeto
 
+```text
+portfolio/
+│
+├── index.html      # Estrutura principal
+├── style.css       # Estilização e Animações
+├── README.md       # Documentação
+└── assets/         # Imagens e vídeos dos projetos
+🔧 Como rodar este projeto
+Como este portfólio é estático (HTML/CSS/JS), você pode visualizá-lo facilmente:
 
-Desenvolvimento Mobile: React Native.
+Clone o repositório:
 
+Bash
 
-Ferramentas e Outros: Git, GitHub , Power BI , Excel , SAP.
+git clone [https://github.com/PedroHValencaR/meu-portfolio.git](https://github.com/PedroHValencaR/meu-portfolio.git)
+Abra o arquivo: Basta dar um duplo clique no arquivo index.html ou usar uma extensão como "Live Server" no VS Code.
 
+📫 Contato
+Estou em busca de oportunidades na área de desenvolvimento. Vamos conversar?
 
-🚀 Projeto em Destaque
-🐍 The Snake - Jogo Clássico em Python
-Uma implementação completa e polida do clássico jogo Snake, desenvolvido com Python e a biblioteca Pygame.
+LinkedIn: Pedro Henrique Valença Ramos
 
-Funcionalidades: Gráficos customizados, sistema de high score, dificuldade progressiva, efeitos sonoros e tela de início estilizada.
+Email: valencapedro@outlook.com
 
-Tecnologias: Python, Pygame.
-
-➡️ Veja o repositório do The Snake aqui
-
-📫 Como me Encontrar
-
-LinkedIn: Pedro Henrique Valença Ramos 
-Email: valencapedro@outlook.com 
-
-Este portfólio foi construído com HTML5, CSS3 e JavaScript puro, e está hospedado no GitHub Pages.
+WhatsApp: (22) 99880-2011
