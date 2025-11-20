@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Henrique Valença Ramos - Desenvolvedor de Jogos</title>
+    <title>Pedro Henrique Valença Ramos - Portfólio</title>
     <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a39dd60c9e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -22,10 +23,14 @@
 
     <main>
         <section id="home">
-            <div class="home-content">
+            <div class="home-content fade-in">
                 <h1>Pedro Henrique Valença Ramos</h1>
-                <h2>Desenvolvedor de Software com Foco em Jogos</h2>
-                <p class="slogan">Da Administração à sala de aula e agora para o desenvolvimento de jogos. Profissional multifacetado com forte habilidade analítica, paixão por resolver problemas e fluência em inglês, construindo novas experiências interativas com Python.</p>
+                <h2>Desenvolvedor Full Stack & Game Dev</h2>
+                <p class="slogan">
+                    Da Administração à sala de aula e agora para o desenvolvimento de software. 
+                    Profissional multifacetado com forte habilidade analítica, paixão por resolver problemas 
+                    e fluência em inglês, construindo novas experiências interativas.
+                </p>
                 <a href="#projetos" class="cta-button">Veja Meus Projetos</a>
             </div>
         </section>
@@ -34,10 +39,18 @@
             <h2>Sobre Mim</h2>
             <div class="sobre-content">
                 <div class="sobre-texto">
-                    <p>Olá! Sou Pedro Henrique.</p>
-                    <p>Sou um profissional em transição de carreira, atualmente cursando <strong>Engenharia de Software</strong> e dedicando minha energia para construir uma carreira como desenvolvedor de jogos. Minha trajetória na <strong>Administração</strong> e no <strong>Controle de Qualidade</strong> me proporcionou uma base sólida em resolução de problemas, pensamento crítico e otimização de processos, habilidades que hoje aplico na criação de código lógico e eficiente.</p>
-                    <p>Minha experiência mais recente como <strong>Instrutor de Idiomas</strong> foi transformadora. Criar planos de aula individualizados, desenvolver materiais didáticos interativos e ser <strong>coautor de quatro livros</strong> aprimorou minha capacidade de quebrar conceitos complexos em etapas simples e de me comunicar de forma eficaz — competências essenciais tanto para ensinar quanto para programar.</p>
-                    <p>Agora, meu foco é unir essa bagagem com minhas habilidades técnicas em <strong>Python, HTML, CSS e JavaScript</strong> para criar jogos. Sou proativo, aprendo rápido e estou animado para contribuir em uma equipe e ajudar a construir jogos que desafiem e encantem os jogadores. Busco minha primeira oportunidade como Desenvolvedor Júnior para aplicar minha paixão e crescer junto com a empresa.</p>
+                    <p>
+						Sou um desenvolvedor de software versátil que combina análise técnica detalhada com metodologias ágeis. 
+						Com experiência que vai da Administração ao desenvolvimento Full Stack, enxergo o código como uma ferramenta para solucionar problemas reais.
+					</p>
+            
+					<p>
+						<strong>Minha filosofia profissional:</strong> Vejo-me como um "motorista de software" que não apenas sabe dirigir diversos veículos (linguagens como Java, Python, PHP), mas que conhece detalhadamente as rotas (algoritmos) e o mapa (arquitetura e modelagem).
+					</p>
+
+					<p>
+						Essa visão me permite construir sistemas eficientes e robustos, otimizando o "percurso" do desenvolvimento para entregar valor de forma contínua e previsível, garantindo que a solução final seja segura, escalável e bem documentada.
+					</p>
                 </div>
             </div>
         </section>
@@ -46,9 +59,8 @@
             <h2>Projetos</h2>
             <div class="projetos-grid">
                 
-              <div class="projeto-card fade-in">
+                <div class="projeto-card">
                     <img src="https://i.imgur.com/VbR2baQ.gif" alt="GIF animado do Jogo Snake">
-                    
                     <div class="card-content">
                         <h3>The Snake - Jogo Clássico</h3>
                         <p class="descricao-projeto">
@@ -58,9 +70,43 @@
                             <strong>Tecnologias:</strong> Python, Pygame
                         </p>
                         <div class="projeto-links">
-                            <a href="https://github.com/PedroHValencaR/The_snake" target="_blank" class="cta-button">Ver Código no GitHub</a>
-                         
-                            </div>
+                            <a href="https://github.com/PedroHValencaR/The_snake" target="_blank" class="cta-button">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="https://i.imgur.com/VRcMUg8.gif" alt="Preview do site Receitas+">
+                    <div class="card-content">
+                        <h3>Receitas+ (Full Stack)</h3>
+                        <p class="descricao-projeto">
+                            Sistema web dinâmico desenvolvido com <strong>PHP</strong> utilizando a classe <strong>PDO</strong> para acesso seguro. 
+                            Implementa um <strong>Modelo Relacional</strong> e utiliza comandos <strong>SQL (DML)</strong> para gerenciar receitas.
+                            Possui conformidade básica com a <strong>LGPD</strong>.
+                        </p>
+                        <p class="tecnologias">
+                            <strong>Tech Stack:</strong> PHP (POO), MySQL, HTML5, CSS3.
+                        </p>
+                        <div class="projeto-links">
+                            <a href="https://github.com/PedroHValencaR/receitas_plus" target="_blank" class="cta-button">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="https://i.imgur.com/YUWLh3c.gif" alt="Preview do Games For All">
+                    <div class="card-content">
+                        <h3>GamesForAll_Reviewer</h3>
+                        <p class="descricao-projeto">
+                            Plataforma de reviews destinada a jogadores de todos os perfis. 
+                            Focada em ajudar desde o jogador casual até o mais técnico a decidir sua próxima aquisição, analisando performance e requisitos.
+                        </p>
+                        <p class="tecnologias">
+                            <strong>Tecnologias:</strong> JavaScript, TypeScript, Ruby
+                        </p>
+                        <div class="projeto-links">
+                            <a href="https://github.com/PedroHValencaR/GamesForAll_Reviewer" target="_blank" class="cta-button">Ver no GitHub</a>
+                        </div>
                     </div>
                 </div>
 
@@ -68,38 +114,93 @@
         </section>
 
         <section id="habilidades" class="fade-in">
-            <h2>Habilidades</h2>
-            <div class="habilidades-container">
-                <ul>
-                    <li>Python (Básico)</li>
-                    <li>Java (Básico)</li>
-                    <li>JavaScript, HTML, CSS, PHP</li>
-                    <li>Git & GitHub</li>
-					<li>React Native (Desenvolvimento Android)</li>
-                    <li>Power BI (Básico)</li>
-                    <li>Engenharia de Prompts</li>
-                    <li>Comunicação Eficaz</li>
-                    <li>Resolução de Problemas</li>
-                    <li>Trabalho em Equipe e Liderança</li>
-                    <li>Aprendizado Rápido e Adaptabilidade</li>
-                    <li>Organização e Proatividade</li>
-                    <li>Pensamento Crítico</li>
-                    <li>Inglês (Fluente)</li>
-                    <li>Espanhol (Básico)</li>
-                </ul>
-            </div>
-        </section>
+    <h2>Competências Técnicas</h2>
+    <div class="habilidades-container">
+        
+        <div class="skill-category">
+            <h3>Linguagens & Backend</h3>
+            <ul>
+                <li><strong>Java:</strong> Multithreading, Sincronização e JVM</li>
+                <li><strong>Python:</strong> Estruturas de Dados, Pandas e NumPy</li>
+                <li><strong>PHP:</strong> Scripts Server-side e POO</li>
+                <li><strong>SQL:</strong> Transações (Commit/Rollback) e CRUD Complexo</li>
+                <li><strong>Criptografia:</strong> Algoritmos reversíveis (3DES) e Segurança</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Frontend & Mobile</h3>
+            <ul>
+                <li><strong>JavaScript:</strong> ES6+, DOM e Requisições Assíncronas (Ajax/Fetch)</li>
+                <li><strong>React Native:</strong> Mobile Cross-platform (Expo, Flux, Redux)</li>
+                <li><strong>HTML5 & CSS3:</strong> Layouts Responsivos e Semântica</li>
+                <li><strong>Frameworks:</strong> Bootstrap, Foundation e persistência local</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Engenharia de Software</h3>
+            <ul>
+                <li><strong>Banco de Dados:</strong> PostgreSQL, MySQL, MongoDB (NoSQL) e Normalização (1FN-3FN)</li>
+                <li><strong>Modelagem:</strong> UML (Classes/Sequência) e DER (Conceitual)</li>
+                <li><strong>POO:</strong> Polimorfismo, Herança, Abstração e Encapsulamento</li>
+                <li><strong>Qualidade:</strong> Tratamento de Exceções, Debugging e Design Patterns (DAO)</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Gestão Ágil & Projetos</h3>
+            <ul>
+                <li><strong>Métodos Ágeis:</strong> Scrum (Artefatos/Eventos) e Kanban</li>
+                <li><strong>Gerenciamento:</strong> PMBOK 7 e Tailoring de processos</li>
+                <li><strong>DevOps:</strong> Conceitos de CI/CD e Versionamento (Git)</li>
+                <li><strong>Soft Skills:</strong> Comunicação, Feedback e Visão Sistêmica</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
 
         <section id="contato" class="fade-in">
-            <h2>Contato</h2>
-            <p>Estou em busca de minha primeira oportunidade na área de desenvolvimento de jogos e adoraria conversar! Você pode me encontrar nos canais abaixo:</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:valencapedro@outlook.com">valencapedro@outlook.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pedro-henrique-valen%C3%A7a-ramos-387a391a4/" target="_blank">Pedro Henrique Valença Ramos</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/PedroHValencaR" target="_blank">PedroHValencaR</a></li>
-                <li><strong>Telefone:</strong> <a href="tel:+5522998802011">(22) 99880-2011</a></li>
-            </ul>
-        </section>
+    <h2>Vamos Conversar?</h2>
+    <p>Estou disponível para novos projetos e oportunidades. Sinta-se à vontade para entrar em contato!</p>
+    
+    <div class="contato-container">
+        
+        <a href="mailto:valencapedro@outlook.com" class="contato-card">
+            <div class="icon-box">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <span>valencapedro@outlook.com</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/pedro-henrique-valen%C3%A7a-ramos-387a391a4/" target="_blank" class="contato-card">
+            <div class="icon-box">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <span>Conectar</span>
+        </a>
+
+        <a href="https://github.com/PedroHValencaR" target="_blank" class="contato-card">
+            <div class="icon-box">
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <span>Ver Portfólio</span>
+        </a>
+
+        <a href="https://wa.me/5522998802011" target="_blank" class="contato-card">
+            <div class="icon-box">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp</h3>
+            <span>(22) 99880-2011</span>
+        </a>
+
+    </div>
+</section>
     </main>
 
     <footer>

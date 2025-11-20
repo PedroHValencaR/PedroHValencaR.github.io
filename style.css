@@ -11,7 +11,7 @@
     --cor-destaque-secundario: #7e22ce; /* Violet */
 }
 
-/* --- 2. ESTILOS GERAIS E ANIMAÇÃO DE ENTRADA --- */
+/* --- 2. ESTILOS GERAIS E ANIMAÇÃO --- */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Evita que o header cubra o título da seção */
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -30,13 +30,14 @@ body {
     line-height: 1.7;
 }
 
-/* Animação que usaremos com JavaScript */
+/* Animação Fade-In (Corrigida para evitar tela preta) */
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1; /* Começa visível para garantir */
+    transform: translateY(0);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+/* Caso o JS funcione, ele aplica isso, mas visualmente não muda nada pois já é 1 */
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
@@ -49,7 +50,7 @@ section {
 }
 
 h1, h2, h3 { color: #ffffff; }
-h1 { font-size: 3.5rem; font-weight: 700; }
+h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.2; }
 h2 { 
     font-size: 2.5rem; 
     font-weight: 600; 
@@ -57,7 +58,7 @@ h2 {
     margin-bottom: 3rem;
     position: relative;
 }
-/* Linha decorativa abaixo do H2 */
+
 h2::after {
     content: '';
     width: 60px;
@@ -69,17 +70,19 @@ h2::after {
     bottom: -10px;
     border-radius: 2px;
 }
-h3 { font-size: 1.6rem; font-weight: 600; }
 
-a { color: var(--cor-destaque-principal); text-decoration: none; }
+h3 { font-size: 1.4rem; font-weight: 600; }
 
-/* --- 3. CABEÇALHO E NAVEGAÇÃO COM EFEITO DE VIDRO --- */
+a { color: var(--cor-destaque-principal); text-decoration: none; transition: color 0.3s; }
+a:hover { color: var(--cor-destaque-secundario); }
+
+/* --- 3. CABEÇALHO E NAVEGAÇÃO --- */
 header {
-    background-color: rgba(10, 10, 16, 0.7);
+    background-color: rgba(10, 10, 16, 0.85);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 100;
     border-bottom: 1px solid var(--cor-borda);
 }
 
@@ -88,6 +91,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 1.2rem 0;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -95,7 +99,6 @@ nav ul li a {
     font-weight: 600;
     padding: 0.5rem 1rem;
     position: relative;
-    transition: color 0.3s ease;
 }
 
 nav ul li a::after {
@@ -103,7 +106,7 @@ nav ul li a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -5px;
+    bottom: -2px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(90deg, var(--cor-destaque-principal), var(--cor-destaque-secundario));
@@ -113,18 +116,18 @@ nav ul li a::after {
 nav ul li a:hover { color: #fff; }
 nav ul li a:hover::after { width: 100%; }
 
-/* --- 4. SEÇÃO HOME (INÍCIO) COM GRADIENTE --- */
+/* --- 4. SEÇÃO HOME --- */
 #home {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(10, 10, 16, 0.9), rgba(10, 10, 16, 1)), url('https://via.placeholder.com/1920x1080/0a0a10/1a1a2e.png?text=') no-repeat center center/cover;
+    background: linear-gradient(rgba(10, 10, 16, 0.9), rgba(10, 10, 16, 1)), url('https://via.placeholder.com/1920x1080/1a1a2e/000000?text=Background') no-repeat center center/cover;
 }
 
 .home-content .slogan {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--cor-texto-secundario);
     max-width: 700px;
     margin: 1.5rem auto 2.5rem;
@@ -133,99 +136,223 @@ nav ul li a:hover::after { width: 100%; }
 
 .cta-button {
     background: linear-gradient(90deg, var(--cor-destaque-principal), var(--cor-destaque-secundario));
-    color: #ffffff;
-    padding: 15px 35px;
+    color: #ffffff !important;
+    padding: 12px 30px;
     border-radius: 50px;
     font-weight: 600;
     display: inline-block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(126, 34, 206, 0.3);
 }
 
-/* --- 5. SEÇÃO DE PROJETOS MODERNIZADA --- */
+/* --- 5. SEÇÃO DE PROJETOS --- */
 .projetos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
 }
 
 .projeto-card {
     background-color: var(--cor-fundo-secundaria);
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--cor-borda);
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .projeto-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: var(--cor-destaque-principal);
 }
 
-.projeto-card img {
+.projeto-card img, .projeto-card video {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease;
 }
 
-.projeto-card:hover img {
-    transform: scale(1.05);
-}
 .card-content {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-.card-content h3 { margin-bottom: 0.5rem; }
-.card-content .descricao-projeto { color: var(--cor-texto-secundario); font-size: 0.95rem; flex-grow: 1; }
-.card-content .tecnologias { margin: 1rem 0; font-weight: 600; font-size: 0.9rem; }
+
+.card-content h3 { margin-bottom: 0.8rem; color: var(--cor-destaque-principal); }
+.card-content .descricao-projeto { 
+    color: var(--cor-texto-secundario); 
+    font-size: 0.95rem; 
+    margin-bottom: 1rem; 
+    flex-grow: 1; 
+}
+.card-content .tecnologias { 
+    margin-bottom: 1.5rem; 
+    font-size: 0.85rem; 
+    color: #fff;
+}
 .projeto-links { margin-top: auto; }
 
-/* --- 6. HABILIDADES COMO TAGS --- */
-#habilidades .habilidades-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 900px;
-    margin: 3rem auto 0;
+/* --- 6. SEÇÃO DE HABILIDADES (Categorias) --- */
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: start;
 }
-#habilidades ul { list-style: none; }
-#habilidades li {
+
+.skill-category {
     background-color: var(--cor-fundo-secundaria);
     border: 1px solid var(--cor-borda);
-    color: var(--cor-texto-secundario);
-    padding: 0.5rem 1rem;
-    margin: 0.3rem;
-    border-radius: 20px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s;
 }
-#habilidades li:hover {
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-destaque-principal);
+}
+
+.skill-category h3 {
     color: #fff;
-    background-color: var(--cor-destaque-principal);
-    transform: translateY(-2px);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 0.5rem;
 }
 
-/* --- 7. SEÇÃO DE CONTATO E RODAPÉ --- */
-#contato { text-align: center; }
-#contato p { max-width: 600px; margin: 0 auto 2rem; }
-#contato ul { list-style: none; display: flex; justify-content: center; gap: 2rem; }
-#contato a { font-weight: 600; font-size: 1.1rem; }
+.skill-category ul {
+    list-style: none;
+}
 
+.skill-category li {
+    margin-bottom: 0.8rem;
+    color: var(--cor-texto-secundario);
+    font-size: 0.95rem;
+    padding-left: 10px;
+    border-left: 2px solid var(--cor-destaque-principal);
+}
+
+.skill-category li strong { color: #fff; }
+
+/* --- 7. SEÇÃO DE CONTATO (AQUI ESTÁ A PARTE QUE FALTAVA) --- */
+#contato {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+#contato p {
+    color: var(--cor-texto-secundario);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+/* Flexbox para os cartões ficarem lado a lado */
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* O Cartão Individual */
+.contato-card {
+    background-color: var(--cor-fundo-secundaria);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 220px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.contato-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--cor-destaque-principal);
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+}
+
+/* Círculo do Ícone */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.icon-box i {
+    font-size: 1.8rem;
+    color: var(--cor-texto-principal);
+    transition: color 0.3s ease;
+}
+
+/* Efeitos de Hover no Ícone */
+.contato-card:hover .icon-box {
+    background-color: var(--cor-destaque-principal);
+}
+.contato-card:hover .icon-box i {
+    color: #fff;
+}
+
+/* Textos do Cartão */
+.contato-card h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.contato-card span {
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario);
+    word-break: break-all;
+}
+
+/* --- 8. RODAPÉ E RESPONSIVIDADE --- */
 footer {
     text-align: center;
     padding: 2rem;
     background-color: #050508;
     color: var(--cor-texto-secundario);
     font-size: 0.9rem;
+    border-top: 1px solid var(--cor-borda);
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    
+    .contato-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato-card {
+        width: 100%;
+        max-width: 350px;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1.5rem;
+        text-align: left;
+    }
+    .icon-box {
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+    }
 }
