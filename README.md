@@ -1,62 +1,74 @@
-# 👨‍💻 Portfólio Profissional - Pedro Henrique Valença Ramos
+# 👨‍💻 Pedro Henrique Valença Ramos — Software Engineering Portfolio
 
-> Desenvolvedor Full Stack & Game Dev | Unindo visão analítica de negócios com engenharia de software.
+> Software Engineering Undergraduate & C++ Systems Enthusiast | Bridging low-level algorithmic thinking with business analysis, industrial telemetry, full-stack applications, and bilingual instruction.
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-## 📄 Sobre
+---
 
-Este é o meu portfólio pessoal, desenvolvido para apresentar minha jornada de transição de carreira da Administração para o Desenvolvimento de Software. O projeto foi construído com foco em **Design Responsivo**, **HTML Semântico** e **Experiência do Usuário (UX)**.
+## 📌 Overview
 
-Aqui concentro meus projetos práticos, minhas competências técnicas (Hard Skills) e minha visão profissional.
+This is the source code for my personal software engineering portfolio. The project adheres to modern, content-first engineering portfolio benchmarks: restrained dark aesthetics, high-contrast typography (`Inter` + `JetBrains Mono`), floating island navigation, and rich technical context.
 
-### 🧠 Minha Filosofia ("O Motorista de Software")
-Vejo-me como um "motorista de software" que não apenas sabe dirigir diversos veículos (linguagens como Java, Python, PHP), mas que conhece detalhadamente as rotas (algoritmos) e o mapa (arquitetura e modelagem). Essa visão me permite construir sistemas eficientes, previsíveis e seguros.
+The site showcases:
+1. **Low-level & Algorithmic Practice:** Active study and implementation in modern C++ with automated CI/CD LinkedIn publishing via GitHub Actions.
+2. **Industrial Telemetry & Systems:** Real-world simulation for the Oil & Gas sector (PetroSync).
+3. **Agile Full-Stack Platforms:** Smart Kanban with external Wikipedia API integration, secure relational CRUD systems (Receitas+), and game development.
+4. **Academic Curriculum:** Exhaustive breakdown of coursework and disciplines from my Software Engineering degree at university.
 
-## 🚀 Projetos em Destaque
+---
 
-O portfólio atua como um hub para meus principais trabalhos:
+## 🚀 Key Projects
 
-1.  **Receitas+ (Full Stack):** Sistema web dinâmico com PHP, PDO e MySQL. Foca em segurança, modelagem relacional e conformidade com LGPD.
-2.  **The Snake (Game Dev):** Recriação do clássico jogo da cobrinha utilizando Python e Pygame, com lógica de colisão e dificuldade progressiva.
-3.  **GamesForAll Reviewer:** Plataforma de reviews de jogos inclusiva, desenvolvida com JavaScript e Ruby.
+* **[C++ Learning, Practice & CI/CD](https://github.com/PedroHValencaR/C-):** Core language mechanics (I/O streams, recursion, math algorithms, console records) and an automated GitHub Actions workflow (`linkedin-post.yml`).
+* **[PetroSync — Offshore Asset Monitoring](https://github.com/PedroHValencaR/PetroSync):** Real-time telemetry simulator (pressure, temperature, vibration) for offshore industrial equipment in the Campos Basin, with MySQL persistence and predictive maintenance logic.
+* **[Smart Kanban with Wikipedia Integration](https://github.com/PedroHValencaR/My-kanban):** Interactive Agile task management system featuring dynamic contextual research fetched from Wikipedia.
+* **[Receitas+](https://github.com/PedroHValencaR/receitas_plus):** Full-stack web system with PHP OOP, MySQL, PDO prepared statements mitigating SQL Injection, and LGPD data privacy awareness.
+* **[The Snake](https://github.com/PedroHValencaR/The_snake):** Arcade game remake in Python and Pygame featuring grid collision algorithms, sound effects, and persistent high scores.
+* **[GamesForAll Reviewer](https://github.com/PedroHValencaR/GamesForAll_Reviewer):** Gaming review aggregator and technical hardware constraint analyzer built with JavaScript, TypeScript, and Ruby.
 
-## 🛠️ Tecnologias Utilizadas no Portfólio
+---
 
-* **HTML5:** Estruturação semântica para SEO e acessibilidade.
-* **CSS3:**
-    * *Flexbox & Grid Layout:* Para alinhamento dos cards e responsividade.
-    * *CSS Variables:* Para fácil manutenção da paleta de cores (Dark Mode).
-    * *Animations:* Efeitos de `fade-in` e `hover` para interatividade.
-* **JavaScript:** Uso de `IntersectionObserver` para animar elementos conforme o scroll da página.
-* **FontAwesome:** Ícones vetoriais para a seção de contato.
+## 🎓 University Studies & Curriculum
 
-## 📂 Estrutura do Projeto
+Subjects completed and in progress throughout the Software Engineering degree:
 
-```text
-portfolio/
-│
-├── index.html      # Estrutura principal
-├── style.css       # Estilização e Animações
-├── README.md       # Documentação
-└── assets/         # Imagens e vídeos dos projetos
-🔧 Como rodar este projeto
-Como este portfólio é estático (HTML/CSS/JS), você pode visualizá-lo facilmente:
+* **Software Architecture & Modeling:** Systems Architecture, Computer Architecture, Design Patterns (DAO, MVC, GoF in Java), Systems Modeling in UML (Class, Sequence, Activity), Software Product Lines.
+* **Databases & Distributed Systems:** Relational Databases (DER, 1NF to 3NF Normalization, ACID Transactions, SQL), NoSQL, Parallel & Distributed Database Processing.
+* **Operating Systems & Infrastructure:** Operating Systems (Linux automation, Process & Memory Management, Schedulers), Computer Networks (TCP/IP), Cloud Computing, DevOps.
+* **Quality Assurance & Requirements:** Requirements Engineering (Elicitation, Feasibility, Stakeholder Mapping), Software Quality & Testing (Defect Lifecycle, ISO/IEC standards), Agile (Scrum, Kanban), PMBOK 7 Process Tailoring.
+* **Applied Programming:** Java OOP (Multithreading, Synchronization, JDBC), Python Data Structures, Python for Data Analysis (Probabilities, Pandas, NumPy), Mobile Development with React Native, Full-Stack Web Development, Cyberlaw & Information Security.
 
-Clone o repositório:
+---
 
-Bash
+## 💼 Professional Experience & Education
 
-git clone [https://github.com/PedroHValencaR/meu-portfolio.git](https://github.com/PedroHValencaR/meu-portfolio.git)
-Abra o arquivo: Basta dar um duplo clique no arquivo index.html ou usar uma extensão como "Live Server" no VS Code.
+* **English Instructor — Go Geo:** Delivered immersive, active-methodology English classes, accelerating verbal fluency, intercultural communication, and technical dialogue.
+* **B.S. in Software Engineering:** In progress (Expected graduation: Early 2027).
+* **Mechatronics Technician:** In progress at Instituto Nossa Senhora da Glória (INSG).
+* **Business Administration:** Academic background in process modeling and commercial alignment.
 
-📫 Contato
-Estou em busca de oportunidades na área de desenvolvimento. Vamos conversar?
+---
 
-LinkedIn: Pedro Henrique Valença Ramos
+## 💻 Local Preview
 
-Email: valencapedro@outlook.com
+This project is a static web application:
 
-WhatsApp: (22) 99880-2011
+```bash
+git clone https://github.com/PedroHValencaR/PedroHValencaR.github.io.git
+```
+
+Open `index.html` in any browser or launch with Live Server.
+
+---
+
+## 📫 Contact
+
+* **Email:** [valencapedro@outlook.com](mailto:valencapedro@outlook.com)
+* **LinkedIn:** [Pedro Henrique Valença Ramos](https://www.linkedin.com/in/pedro-henrique-valen%C3%A7a-ramos-387a391a4/)
+* **GitHub:** [PedroHValencaR](https://github.com/PedroHValencaR)
+* **WhatsApp:** [+55 (22) 99880-2011](https://wa.me/5522998802011)
